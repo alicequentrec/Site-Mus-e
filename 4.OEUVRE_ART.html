@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ma Page</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background-image: url('https://media.istockphoto.com/id/511661914/fr/photo/fond-de-texture-marbre-blanc-%C3%A0-motif.jpg?s=612x612&w=0&k=20&c=5uKV82duXQFS7JQ7H556kJTR-ZtAvoAeoq7KOf2cnOo=');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: none;
+    }
+
+    * {
+      border: 1px solid rgb(255, 255, 255);
+    }
+
+    header, .container, .article, footer {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    header{
+        background-color: white;
+        margin-top: 10px;
+        border-radius: 30px;
+        transition: backgroung-color 0.3s ease;
+    }
+
+    header:hover {
+      background: linear-gradient(to bottom, rgba(248, 255, 41, 0.847), rgba(255, 120, 163, 0.84), rgba(80, 199, 255, 0.722));
+    }
+
+    nav {
+      text-align: center;
+    }
+
+    nav ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-top: 3cm;
+      border: none;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 3cm;
+      border: none;
+    }
+
+    nav li a:hover {
+      color: white;
+    }
+
+    
+    nav li a{
+        text-decoration: none;
+        border: none;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      width: 66.8%;
+      margin-top: 100px;
+      height: 750px;
+      background-color: white;
+      border-radius: 20px;
+      transition: backgroung-color 0.3s ease;
+    }
+
+    section:hover {
+      background: linear-gradient(to bottom, rgba(248, 255, 41, 0.847), rgba(255, 120, 163, 0.84), rgba(80, 199, 255, 0.722));
+    }
+
+    .square {
+      width: 25%;
+      padding-top: 30%; /* Maintient un ratio de 1:1 pour la hauteur en fonction de la largeur */
+      margin: 3.9%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      border-radius: 10px;
+    }
+
+
+
+    .article {
+  width: 35%;
+  height: 200px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+  border: 1px solid black;
+ 
+}
+
+.article:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 120px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.article:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+
+    footer {
+      margin-top: 250px;
+      height: 320px;
+      margin-bottom: 20px;
+      background-color: white;
+    }
+
+
+     
+
+    footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 280px;
+  padding: 20px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  color: black;
+  text-align: center;
+  height: 250px;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+}
+
+footer:hover {
+    background: linear-gradient(to bottom, rgba(248, 255, 41, 0.847), rgba(255, 120, 163, 0.84), rgba(80, 199, 255, 0.722));
+    }
+
+.footer-content {
+  flex: 1;
+  margin-top: 70px;
+  
+}
+
+.footer-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+  margin-left: 10px;
+}
+
+.footer-content p {
+  margin-bottom: 5px;
+  border: none;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.footer-content ul li {
+  margin-bottom: 5px;
+  border: none;
+}
+
+.footer-content ul li a {
+  color: black;
+  text-decoration: none;
+  border: none;
+}
+
+.footer-content ul li a:hover {
+  color: #ccc;
+  border: none;
+}
+
+.footer-content form input[type="email"] {
+  padding: 5px;
+  width: 200px;
+  border: none;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.footer-content form button[type="submit"] {
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border: none;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  flex: 1;
+  margin-top: 230px;
+  border: none;
+}
+
+
+.footer-news{
+    position: absolute;
+    right: 220px;
+}
+
+.footer-liens{
+   
+   margin-top: 25px;
+   width: 20%;
+   border: none;
+   position: absolute;
+    right: 525px;
+}
+
+.footer-liens a{
+   
+   text-decoration: none;
+   color: white;
+}
+
+.footer-coordonnées{
+
+  margin-top: -1px;
+  border: none;
+  width: 40%;
+  position: relative;
+    right: 15%;
+}
+
+.footer-copyright{
+   border: none;
+   position: relative;
+    right: 55%;
+    margin-top: 230px;
+    border: none;
+
+}
+
+.titre {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  margin-top: 120px;
+}
+
+
+.titre-second {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  margin-top: 120px;
+  font-size: 40px;
+}
+
+
+.autre_produits li{
+           
+    text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  margin-top: 150px;
+  border: none;
+  font-size: 25px;
+  list-style: none;
+
+}
+
+.autre_produits{border: none;}
+.autre_produits ul{border: none;}
+
+
+
+
+.autre_produits li a{
+    color: black;
+    border: none;
+    text-decoration: none;
+}
+
+.autre_produits li a:hover{
+
+    color: orange;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="1.ACCEUIL.html">Accueil</a></li>
+            <li><a href="2.NOS_EXPOSITIONS.html">Nos Expositions</a></li>
+            <li><a href="3.CONTACTEZ-NOUS.html">Contactez-nous</a></li>
+          </ul>
+    </nav>
+  </header>
+  
+  <h1 class="titre">DECOUVREZ NOS OEUVRES ARTISTIQUES.</h1>
+
+  <section>
+    <div class="square" style="background-image: url(https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);"></div>
+    <div class="square" style="background-image: url(https://images.unsplash.com/photo-1561214115-f2f134cc4912?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=409&q=80);"></div>
+    <div class="square" style="background-image: url(https://images.unsplash.com/photo-1549490349-8643362247b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);"></div>
+    <div class="square" style="background-image: url(https://images.unsplash.com/photo-1578301978018-3005759f48f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1144&q=80);"></div>
+    <div class="square" style="background-image: url(https://images.unsplash.com/photo-1549277513-f1b32fe1f8f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);"></div>
+    <div class="square" style="background-image: url(https://images.unsplash.com/photo-1559102877-4a2cc0e37fce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1057&q=80);"></div>
+  </section>
+
+
+  <h2 class="titre-second">Admirez ce que nous avons de plus.</h2>
+
+  <div class="article">
+    <!-- Contenu de la div article -->
+  </div>
+
+  
+  <div class="autre_produits">
+    <ul>
+        <li> <a href="5.COSTUME.html"> costumes</a></li>
+        <li> <a href="6.MEUBLES.html"> meubles </a></li>
+        <li> <a href="7.BIJOUX.html"> bijoux  </a></li>
+        <li> <a href="8.VOITURES.html"> voiture </a></li>
+      </ul>
+  </div>
+  
+  
+  
+  <footer>
+    <div class="footer-coordonnées">
+      <h3>Coordonnées</h3>
+      <p>Adresse : 10 Rue Sextius Michel,75015,Paris</p>
+      <p>Téléphone : +33 144 39 06 00</p>
+      <p>Email : contact@ece.fr</p>
+    </div>
+    
+    <div class="footer-liens">
+      <h3>Liens utiles</h3>
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-news">
+      <h3>Abonnez-vous à notre newsletter</h3>
+      <form>
+        <input type="email" placeholder="Votre adresse email" required>
+        <button type="submit">S'abonner</button>
+      </form>
+    </div>
+    
+    
+    <div class="footer-copyright">
+      <p>&copy; 2023 Nom de votre entreprise. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>

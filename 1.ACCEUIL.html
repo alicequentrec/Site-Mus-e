@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ma Page</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      background-image: url('https://media.istockphoto.com/id/511661914/fr/photo/fond-de-texture-marbre-blanc-%C3%A0-motif.jpg?s=612x612&w=0&k=20&c=5uKV82duXQFS7JQ7H556kJTR-ZtAvoAeoq7KOf2cnOo=');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: none;
+    }
+
+    * {
+      border: 1px solid rgb(253, 253, 253);
+    }
+
+    header, .container, .article, footer {
+      width: 70%;
+      margin: 0 auto;
+      background-color: white;
+      margin-top: 10px;
+    }
+     
+
+    header{
+        background-color: white;
+        margin-top: 10px;
+        border-radius: 30px;
+        transition: backgroung-color 0.3s ease;
+        border: none;
+    }
+
+    header:hover {
+      background: linear-gradient(to bottom, rgba(248, 255, 41, 0.847), rgba(255, 120, 163, 0.84), rgba(80, 199, 255, 0.722));
+    }
+
+
+    nav {
+      text-align: center;
+    }
+
+    nav ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-top: 3cm;
+      border: none;
+    }
+
+    
+
+    nav li {
+      display: inline;
+      margin-right: 3cm;
+      border: none;
+    }
+
+    nav li a {
+      text-decoration: none;
+      border: none;
+      color: black;
+    }
+
+    nav li a:hover {
+      color: white;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      width: 66.8%;
+      margin-top: 150px;
+      height: 700px;
+      background-color: rgba(0, 0, 0, 0.198);
+      transition: background-color 0.3s ease;
+    }
+
+    section:hover {
+      background: linear-gradient(to bottom, rgba(247, 255, 22, 0.847), rgba(255, 70, 128, 0.84), rgba(24, 5, 193, 0.722));
+    }
+
+    .container {
+      display: inline-block;
+      width: 45%;
+      transition: background-color 0.3s ease;
+    }
+
+    .container:hover {
+  background: linear-gradient(to bottom, rgba(0, 174, 255, 0.8), rgba(255, 51, 255, 0.8));
+}
+    
+
+    .container p {
+                    background-color:white;
+                    width: 100%;
+                    margin-top: 85px;
+                    color:black;
+                    margin-left: 33%;
+                    font-size: 20px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .droite{
+             background-color:white;
+             width: 47%;
+             margin-left: 40%;
+             margin-top: -480px;
+             font-size: 20px;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .container:first-child{
+      margin-right: 44.6%;
+      height: 380px;
+      width: 40%;
+    }
+  
+
+    .container:first-child img{
+      margin-left: 44.8%;
+      height: 380px;
+      width: 55%;
+    }
+
+
+
+    .container:last-child {
+      margin-left: 52%;
+      height: 350px;
+      width: 45%;
+      margin-top: 100px;
+    }
+
+    
+
+ 
+
+    .container:last-child img{
+      margin-left: 39.9%;
+      height: 350px;
+      width: 60%;
+      
+    }
+
+    .article {
+      background-color: rgba(0, 0, 0, 0.39);
+      margin-top: 180px;
+      height: 300px;
+      transition: background-color 0.3s ease;
+     
+    }
+
+    .article:hover {
+     background: linear-gradient(to bottom, rgba(0, 174, 255, 0.8), rgba(255, 51, 255, 0.8));
+    }
+
+
+    .article img{
+        height: 300px;
+    }
+
+    .article p {
+        background-color: rgb(255, 255, 255);
+        width: 50%;
+        margin-left: 450px;
+        margin-top: -185px;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+
+    
+
+    footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 280px;
+  padding: 20px;
+  background-color: rgba(17, 17, 17, 0.83);
+  transition: background-color 0.3s ease;
+  color: white;
+  text-align: center;
+  height: 250px;
+  transition: background-color 0.3s ease;
+}
+
+footer:hover {
+     background: linear-gradient(to bottom, rgba(0, 174, 255, 0.8), rgba(255, 51, 255, 0.8));
+    }
+
+.footer-content {
+  flex: 1;
+  margin-top: 70px;
+  
+}
+
+.footer-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+  margin-left: 10px;
+}
+
+.footer-content p {
+  margin-bottom: 5px;
+  border: none;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.footer-content ul li {
+  margin-bottom: 5px;
+  border: none;
+}
+
+.footer-content ul li a {
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+.footer-content ul li a:hover {
+  color: #ccc;
+  border: none;
+}
+
+.footer-content form input[type="email"] {
+  padding: 5px;
+  width: 200px;
+  border: none;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.footer-content form button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: none;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  flex: 1;
+  margin-top: 230px;
+  border: none;
+}
+
+
+.footer-news{
+    position: absolute;
+    right: 220px;
+}
+
+.footer-liens{
+   
+   margin-top: 25px;
+   width: 20%;
+   border: none;
+   position: absolute;
+    right: 525px;
+}
+
+.footer-liens a{
+   
+   text-decoration: none;
+   color: white;
+}
+
+.footer-coordonnées{
+
+  margin-top: -1px;
+  border: none;
+  width: 40%;
+  position: relative;
+    right: 15%;
+}
+
+.footer-copyright{
+   border: none;
+   position: relative;
+    right: 55%;
+    margin-top: 230px;
+    border: none;
+
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="1.ACCEUIL.html">Accueil</a></li>
+        <li><a href="2.NOS_EXPOSITIONS.html">Nos Expositions</a></li>
+        <li><a href="3.CONTACTEZ-NOUS.html">Contactez-nous</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container">
+      <!-- Contenu du conteneur de gauche -->
+      <img src="https://images.unsplash.com/photo-1552536273-91084b4b10b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80" alt="" > 
+      
+      <p>
+        Nous sommes ravis de vous accueillir et de vous accompagner dans
+         votre expérience avec nous. Vous avez fait le bon choix en 
+         choisissant notre entreprise pour répondre à vos besoins.
+      </p>
+
+    </div>
+
+    <p class="droite">
+        N'hésitez pas à explorer notre site et à découvrir nos offres exceptionnelles.
+        Découvrez des produits de qualité, des services exceptionnels ou des conseils d'experts,
+        nous sommes là pour vous offrir une expérience unique et satisfaisante.
+      </p>
+    
+
+    <div class="container">
+             
+    
+      <!-- Contenu du conteneur de droite -->
+      <img src="https://images.unsplash.com/photo-1621886292650-520f76c747d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
+
+    </div>
+
+   
+  </section>
+
+
+  <div class="article">
+    <!-- Contenu de la div article -->
+    <img src="https://media.istockphoto.com/id/504737057/fr/photo/bracelet-jonc.jpg?s=612x612&w=0&k=20&c=WIzWiSoagQlxIJ37ctT9pch62y1326CRuUxCv30oIBs=" alt="">
+    <p>
+         Comptemplez la beauté,la rareté et l'éclat de nos bijoux et ouvres d'art !
+    </p>
+  </div>
+
+  
+
+  <footer>
+    <div class="footer-coordonnées">
+      <h3>Coordonnées</h3>
+      <p>Adresse : 10 Rue Sextius Michel,75015,Paris</p>
+      <p>Téléphone : +33 144 39 06 00</p>
+      <p>Email : contact@ece.fr</p>
+    </div>
+    
+    <div class="footer-liens">
+      <h3>Liens utiles</h3>
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-news">
+      <h3>Abonnez-vous à notre newsletter</h3>
+      <form>
+        <input type="email" placeholder="Votre adresse email" required>
+        <button type="submit">S'abonner</button>
+      </form>
+    </div>
+    
+    
+    <div class="footer-copyright">
+      <p>&copy; 2023 Nom de votre entreprise. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
